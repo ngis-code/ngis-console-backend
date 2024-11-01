@@ -1,22 +1,17 @@
 <script lang="ts">
-    import { base } from '$app/paths';
     import { Avatar, AvatarInitials, Card, Heading } from '$lib/components';
     import AppwriteLogoDark from '$lib/images/appwrite-logo-dark.svg';
     import AppwriteLogoLight from '$lib/images/appwrite-logo-light.svg';
-    import LoginDark from '$lib/images/login/login-dark-mode.png';
-    import LoginLight from '$lib/images/login/login-light-mode.png';
     import type { Coupon } from '$lib/sdk/billing';
     import { app } from '$lib/stores/app';
     import { campaigns, type CampaignData } from '$lib/stores/campaigns';
-
-    export const imgLight = LoginLight;
-    export const imgDark = LoginDark;
+    import { user } from '$lib/stores/user';
 
     export let campaign: string = null;
     export let coupon: Coupon = null;
 
     $: selectedCampaign = campaigns.get(coupon?.campaign ?? campaign);
-    $: variation = ((coupon?.campaign ?? campaign) ? selectedCampaign?.template : 'default') as
+    $: variation = (coupon?.campaign ?? campaign ? selectedCampaign?.template : 'default') as
         | 'default'
         | CampaignData['template'];
 
@@ -43,9 +38,7 @@
 <main class="grid-1-1 is-full-page" id="main">
     <section
         class={`u-flex u-flex-vertical ${variation !== 'default' ? 'u-cross-center u-main-center u-height-100-percent u-width-full-line side-bg' : 'side-default'}`}
-        style:--url={variation !== 'default'
-            ? ''
-            : `url(${$app.themeInUse === 'dark' ? imgDark : imgLight})`}>
+        style:--url={variation !== 'default' ? '' : ''}>
         {#if variation !== 'default'}
             <div class="side-bg-container" />
         {/if}
@@ -53,17 +46,17 @@
             class="logo u-flex u-gap-16"
             class:is-not-mobile={variation === 'default'}
             class:logo-variation={variation !== 'default'}>
-            <a href={base}>
+            <a href={user ? '/console' : '/'}>
                 {#if $app.themeInUse === 'dark'}
                     <img
-                        src={AppwriteLogoDark}
-                        width="160"
+                        src={AppwriteLogoLight}
+                        width="360"
                         class="u-block u-only-dark"
                         alt="Appwrite Logo" />
                 {:else}
                     <img
-                        src={AppwriteLogoLight}
-                        width="160"
+                        src={AppwriteLogoDark}
+                        width="360"
                         class="u-block u-only-light"
                         alt="Appwrite Logo" />
                 {/if}
@@ -74,16 +67,11 @@
             <div class="u-flex u-stretch" />
 
             <div class="tag-line is-not-mobile">
-                <p>Build like a team of hundreds<span class="underscore">_</span></p>
+                <p>NGIS Management Console<span class="underscore">_</span></p>
             </div>
-        {:else if variation === 'card'}
+        {:else if variation === 'card' || variation === 'review'}
             <section
                 class="u-flex u-flex-vertical u-main-center u-cross-center u-height-100-percent u-width-full-line">
-                <img
-                    src={`${base}/images/campaigns/${coupon?.campaign ?? campaign}/${$app.themeInUse}.png`}
-                    class="u-block u-image-object-fit-cover side-bg-img"
-                    alt="promo" />
-
                 <div class="u-text-center auth-container">
                     <div class="is-only-mobile u-width-full-line">
                         <Heading
@@ -109,65 +97,6 @@
                         {generateDesc()}
                     </p>
                 </div>
-            </section>
-        {:else if variation === 'review'}
-            <section
-                class="u-flex u-flex-vertical u-main-center u-cross-center u-height-100-percent u-width-full-line review-container">
-                <div class="u-text-center">
-                    <div class="is-only-mobile u-width-full-line">
-                        <Heading
-                            size="5"
-                            tag="h3"
-                            class="u-margin-block-start-48"
-                            trimmed={false}
-                            style="font-weight:normal">
-                            {generateTitle()}
-                        </Heading>
-                    </div>
-                    <div class="is-not-mobile u-width-full-line">
-                        <Heading
-                            size="3"
-                            tag="h3"
-                            class="u-margin-block-start-32"
-                            trimmed={false}
-                            style="font-weight:normal">
-                            {generateTitle()}
-                        </Heading>
-                    </div>
-                </div>
-
-                <p class="body-text-1 u-margin-block-start-16 u-text-center">{generateDesc()}</p>
-                <div class="review-container u-margin-block-start-64">
-                    <Card style="--p-card-padding: 1.25rem">
-                        <p class="body-text-1">
-                            {currentReview.review}
-                        </p>
-                        <div class="u-margin-block-start-16 u-flex u-gap-16">
-                            {#if currentReview?.img}
-                                <Avatar
-                                    src={`${base}/images/campaigns/${coupon?.campaign ?? campaign}/reviewers/${currentReview.img}`}
-                                    name={currentReview.name}
-                                    size={40} />
-                            {:else}
-                                <AvatarInitials size={40} name={currentReview.name} />
-                            {/if}
-                            <div>
-                                <p class="body-text-2 u-bold">{currentReview.name}</p>
-                                <p class="body-text-2">{currentReview.desc}</p>
-                            </div>
-                        </div>
-                    </Card>
-                </div>
-                {#if selectedCampaign?.footer}
-                    <div
-                        class="u-flex u-gap-16 u-cross-center u-main-center review-footer-container">
-                        <p class="u-bold" style:text-transform="uppercase">provided to you by</p>
-                        <img
-                            style:max-block-size="2.5rem"
-                            src={`${base}/images/campaigns/${coupon?.campaign ?? campaign}/footer/${$app.themeInUse}.png`}
-                            alt={coupon?.campaign ?? campaign} />
-                    </div>
-                {/if}
             </section>
         {/if}
     </section>
@@ -195,17 +124,17 @@
             </div>
             <div
                 class="logo u-flex u-gap-16 u-margin-inline-auto is-only-mobile u-margin-block-start-32">
-                <a href={base}>
+                <a href={user ? '/console' : '/'}>
                     {#if $app.themeInUse === 'dark'}
                         <img
-                            src={AppwriteLogoDark}
-                            width="93"
+                            src={AppwriteLogoLight}
+                            width="393"
                             class="u-block u-only-dark"
                             alt="Appwrite Logo" />
                     {:else}
                         <img
-                            src={AppwriteLogoLight}
-                            width="93"
+                            src={AppwriteLogoDark}
+                            width="393"
                             class="u-block u-only-light"
                             alt="Appwrite Logo" />
                     {/if}
@@ -214,6 +143,10 @@
         </div>
     </section>
 </main>
+
+
+
+
 
 <style lang="scss">
     @import '@appwrite.io/pink/src/abstract/variables/_devices.scss';
