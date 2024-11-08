@@ -7,34 +7,34 @@
     import { organizationList, organization, newOrgModal } from '$lib/stores/organization';
     import { page } from '$app/stores';
     import { Submit, trackEvent } from '$lib/actions/analytics';
-    import { tooltip } from '$lib/actions/tooltip';
-    import { toggleCommandCenter } from '$lib/commandCenter/commandCenter.svelte';
+    // import { tooltip } from '$lib/actions/tooltip';
+    // import { toggleCommandCenter } from '$lib/commandCenter/commandCenter.svelte';
     import Button from '$lib/elements/forms/button.svelte';
-    import { isMac } from '$lib/helpers/platform';
-    import AppwriteLogoDark from '$lib/images/appwrite-logo-dark.svg';
-    import AppwriteLogoLight from '$lib/images/appwrite-logo-light.svg';
+    // import { isMac } from '$lib/helpers/platform';
+    import AppwriteLogoDark from '$lib/images/appwrite-logo-light.svg';
+    import AppwriteLogoLight from '$lib/images/appwrite-logo-dark.svg';
     import DarkMode from '$lib/images/mode/dark-mode.svg';
     import LightMode from '$lib/images/mode/light-mode.svg';
     import SystemMode from '$lib/images/mode/system-mode.svg';
-    import { feedback } from '$lib/stores/feedback';
+    // import { feedback } from '$lib/stores/feedback';
     import { slide } from 'svelte/transition';
     import { sdk } from '$lib/stores/sdk';
     import { isCloud } from '$lib/system';
-    import { Feedback } from '$lib/components/feedback';
+    // import { Feedback } from '$lib/components/feedback';
     import { BillingPlan, Dependencies } from '$lib/constants';
     import { upgradeURL } from '$lib/stores/billing';
 
     let showDropdown = false;
-    let showSupport = false;
+    // let showSupport = false;
     let droplistElement: HTMLDivElement;
 
-    function toggleFeedback() {
-        feedback.toggleFeedback();
-        if ($feedback.notification) {
-            feedback.toggleNotification();
-            feedback.addVisualization();
-        }
-    }
+    // function toggleFeedback() {
+    //     feedback.toggleFeedback();
+    //     if ($feedback.notification) {
+    //         feedback.toggleNotification();
+    //         feedback.addVisualization();
+    //     }
+    // }
 
     async function logout() {
         await sdk.forConsole.account.deleteSession('current');
@@ -81,8 +81,8 @@
     <a href={$organization ? `${base}/organization-${$organization.$id}` : base}>
         <img
             src={$app.themeInUse == 'dark' ? AppwriteLogoDark : AppwriteLogoLight}
-            width="120"
-            height="22"
+            width="200"
+            height="60"
             alt="Appwrite" />
     </a>
     {#if isCloud}
@@ -114,7 +114,7 @@
             </Button>
         {/if}
 
-        {#if $feedback.notification}
+        <!-- {#if $feedback.notification}
             <div class="u-flex u-cross-center">
                 <div class="pulse-notification" />
             </div>
@@ -131,9 +131,9 @@
             <svelte:fragment slot="other">
                 <Feedback />
             </svelte:fragment>
-        </DropList>
+        </DropList> -->
 
-        {#if isCloud}
+        <!-- {#if isCloud}
             <DropList width="18.5" bind:show={showSupport} scrollable={true}>
                 <Button text on:click={() => (showSupport = !showSupport)}>
                     <span class="text">Support</span>
@@ -142,8 +142,8 @@
                     <Support bind:show={showSupport} />
                 </svelte:fragment>
             </DropList>
-        {/if}
-        <Button
+        {/if} -->
+        <!-- <Button
             actions={[
                 (node) => {
                     return tooltip(node, {
@@ -157,7 +157,7 @@
             ariaLabel="Toggle Command Center"
             on:click={toggleCommandCenter}>
             <i class="icon-search" />
-        </Button>
+        </Button> -->
     </nav>
     <nav class="u-flex u-height-100-percent u-sep-inline-start">
         {#if $user}

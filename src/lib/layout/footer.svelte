@@ -6,7 +6,7 @@
 </script>
 
 <footer class="main-footer u-cross-center">
-    <div class="main-footer-start">
+    <!-- <div class="main-footer-start">
         <ul class="inline-links is-no-padding-first-and-last u-x-small u-flex-wrap u-gap-16">
             <li class="inline-links-item" style="line-height: 1.02;">
                 <div class="u-flex u-cross-center u-gap-8">
@@ -48,28 +48,13 @@
                 </li>
             {/if}
         </ul>
-    </div>
+    </div> -->
     <div class="main-footer-end">
         <ul class="inline-links is-no-padding-first-and-last u-x-small">
             <li class="inline-links-item">
-                <span class="text">ⓒ {currentYear} Appwrite. All rights reserved.</span>
+                <span class="text">ⓒ {currentYear} Landon Byron</span>
             </li>
-            <li class="inline-links-item u-flex u-gap-8">
-                <a
-                    href="https://github.com/appwrite/appwrite"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Appwrite on Github">
-                    <span class="icon-github" aria-hidden="true" />
-                </a>
-                <a
-                    href="https://appwrite.io/discord"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Appwrite on Discord">
-                    <span class="icon-discord" aria-hidden="true" />
-                </a>
-            </li>
+          
         </ul>
     </div>
 </footer>
@@ -79,18 +64,5 @@
         margin-block-start: auto;
     }
 
-    .main-footer-start .inline-links-item {
-        padding-inline-end: 1rem;
-        padding-inline-start: unset;
-    }
-
-    [class^='icon-']:not(.icon-cloud):not(:hover) {
-        color: hsl(var(--color-neutral-50));
-    }
-
-    @media (max-width: 1200px) {
-        .main-footer {
-            gap: 2rem;
-        }
-    }
+    
 </style>

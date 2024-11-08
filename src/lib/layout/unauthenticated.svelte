@@ -67,7 +67,7 @@
             <div class="u-flex u-stretch" />
 
             <div class="tag-line is-not-mobile">
-                <p>NGIS Management Console<span class="underscore">_</span></p>
+                <p>RoyalTV Management Console<span class="underscore">_</span></p>
             </div>
         {:else if variation === 'card' || variation === 'review'}
             <section
