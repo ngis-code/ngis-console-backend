@@ -1,4 +1,4 @@
-<!-- <script context="module" lang="ts">
+<script context="module" lang="ts">
     import CreateTemplate from './createTemplate.svelte';
 
     export function connectTemplate(
@@ -23,7 +23,7 @@
         });
         wizard.start(CreateTemplate);
     }
-</script> -->
+</script>
 
 <script lang="ts">
     import { base } from '$app/paths';
