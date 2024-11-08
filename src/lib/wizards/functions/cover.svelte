@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     {/if} -->
-                </div>
+                <!-- </div> -->
 
                 <!-- <div class="card u-height-100-percent">
                     <section class="common-section">
@@ -298,9 +298,9 @@
                     class="link">Learn more</a
                 >.
             </p> -->
-        </div>
+        <!-- </div>
     </div>
-</WizardCover>
+</WizardCover>  -->
 
 <!-- <style lang="scss">
     .git-container .overlay {
