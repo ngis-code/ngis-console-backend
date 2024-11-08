@@ -31,10 +31,10 @@
     import { isSelfHosted } from '$lib/system';
     import { consoleVariables } from '$routes/(console)/store';
 
-    export let total: number;
-    export let limit: number;
-    export let offset: number;
-    export let installations: Models.Installation[];
+    // export let total: number;
+    // export let limit: number;
+    // export let offset: number;
+    // export let installations: Models.Installation[];
 
     let showGitIstall = false;
     let showGitDisconnect = false;
@@ -80,7 +80,7 @@
     }
 </script>
 
-<CardGrid>
+<!-- <CardGrid>
     <Heading tag="h6" size="7">Git configuration</Heading>
     <p class="text">
         Add a Git installation to your project. You can connect a repository in your function
@@ -216,7 +216,7 @@
             </article>
         {/if}
     </svelte:fragment>
-</CardGrid>
+</CardGrid> -->
 
 {#if showGitIstall}
     <GitInstallationModal bind:showGitInstall={showGitIstall} />

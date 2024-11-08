@@ -1,4 +1,5 @@
-<script lang="ts">
+<h1>Disabled</h1>
+<!-- <script lang="ts">
     import { invalidate } from '$app/navigation';
     import { registerCommands, updateCommandGroupRanks } from '$lib/commandCenter';
     import { Arrow, CardGrid, Heading } from '$lib/components';
@@ -321,4 +322,4 @@
 
         padding: 1.5rem;
     }
-</style>
+</style> -->
