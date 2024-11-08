@@ -151,10 +151,11 @@
                 </FormList>
                 <p>
                     Two-factor authentication enhances your account's security by requiring a second
-                    sign-in method. <Button
+                    sign-in method.
+                     <!-- <Button
                         link
                         external
-                        href="https://appwrite.io/docs/products/auth/mfa">Learn more.</Button>
+                        href="https://appwrite.io/docs/products/auth/mfa">Learn more.</Button> -->
                 </p>
             </div>
             {#if $user.mfa}

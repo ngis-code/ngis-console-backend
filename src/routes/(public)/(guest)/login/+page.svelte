@@ -109,7 +109,7 @@
                 <FormItem>
                     <Button fullWidth submit {disabled}>Sign in</Button>
                 </FormItem>
-                {#if isCloud}
+                <!-- {#if isCloud}
                     <span class="with-separators eyebrow-heading-3">or</span>
                     <FormItem>
                         <Button github fullWidth on:click={onGithubLogin} {disabled}>
@@ -117,18 +117,18 @@
                             <span class="text">Sign in with GitHub</span>
                         </Button>
                     </FormItem>
-                {/if}
+                {/if} -->
             </FormList>
         </Form>
     </svelte:fragment>
     <svelte:fragment slot="links">
-        <li class="inline-links-item">
+        <!-- <li class="inline-links-item">
             <a href={`${base}/recover`}><span class="text">Forgot Password?</span></a>
         </li>
         <li class="inline-links-item">
             <a href={`${base}/register${$page?.url?.search ?? ''}`}>
                 <span class="text">Sign Up</span>
             </a>
-        </li>
+        </li> -->
     </svelte:fragment>
 </Unauthenticated>

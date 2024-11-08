@@ -11,7 +11,7 @@
     export let isCard = true;
     export let noMedia = false;
     export let target: string = null;
-    export let href: string = null;
+    //export let href: string = null;
     export let marginTop = false;
     export let allowCreate = true;
 
@@ -65,12 +65,12 @@
                     </p>
                 </div>
                 <div class="u-flex u-flex-wrap u-gap-16 u-main-center">
-                    <Button
+                    <!-- <Button
                         external
                         {href}
                         text
                         event="empty_documentation"
-                        ariaLabel="create {target}">Documentation</Button>
+                        ariaLabel="create {target}">Documentation</Button> -->
                     {#if allowCreate}
                         <Button secondary on:click on:click={track}>
                             Create {target}

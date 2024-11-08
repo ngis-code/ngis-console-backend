@@ -108,7 +108,7 @@
                     required
                     showPasswordButton
                     bind:value={pass} />
-                <InputChoice required value={terms} id="terms" label="terms" showLabel={false}>
+                <!-- <InputChoice required value={terms} id="terms" label="terms" showLabel={false}>
                     By registering, you agree that you have read, understand, and acknowledge our <a
                         class="link"
                         href="https://appwrite.io/privacy"
@@ -121,7 +121,7 @@
                         href="https://appwrite.io/terms"
                         target="_blank"
                         rel="noopener noreferrer">General Terms of Use</a
-                    >.</InputChoice>
+                    >.</InputChoice> -->
                 <FormItem>
                     <Button fullWidth submit {disabled}>Sign up</Button>
                 </FormItem>

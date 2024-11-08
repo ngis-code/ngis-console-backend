@@ -126,11 +126,11 @@
             </TableBody>
         </TableScroll>
     {:else}
-        <Empty
+        <!-- <Empty
             single
             href="https://appwrite.io/docs/advanced/platform/webhooks"
             target="webhook"
-            on:click={openWizard} />
+            on:click={openWizard} /> -->
     {/if}
 </Container>
 

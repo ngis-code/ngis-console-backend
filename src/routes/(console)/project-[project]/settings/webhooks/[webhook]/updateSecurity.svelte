@@ -89,12 +89,12 @@
                     bind:value={security}>
                     <span class="u-color-text-danger">Warning:</span> Untrusted or self-signed
                     certificates may not be secure.
-                    <a
+                    <!-- <a
                         href="https://appwrite.io/docs/advanced/self-hosting/tls-certificates"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="link">
-                        Learn more</a>
+                        Learn more</a> -->
                 </InputChoice>
             </FormList>
         </svelte:fragment>
