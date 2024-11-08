@@ -175,7 +175,7 @@
     <CardGrid>
         <Heading tag="h6" size="7">Configuration</Heading>
         <p class="text">
-            Connect a Git repository for automatic deployments, or set install and build commands
+            Set install and build commands
             for your function.
         </p>
         <svelte:fragment slot="aside">
@@ -188,8 +188,20 @@
                     placeholder="Enter an entrypoint (e.g. 'index.js')"
                     bind:value={entrypoint} />
             </FormList>
-            <Collapsible>
-                {#if repository === false}
+            <CollapsibleItem>
+                <svelte:fragment slot="title">Build settings</svelte:fragment>
+                <FormList>
+                    <InputTextarea
+                        label="Commands"
+                        placeholder="Enter an install command (e.g. 'npm install')"
+                        id="install"
+                        tooltip="Enter a single command or chain multiple commands with the && operator"
+                        bind:value={commands} />
+                </FormList>
+            </CollapsibleItem>
+        
+            <!-- <Collapsible> -->
+                <!-- {#if repository === false}
                     <CollapsibleItem>
                         <svelte:fragment slot="title">
                             <span class="u-margin-inline-end-16">Git settings</span>
@@ -201,7 +213,7 @@
                             </div>
                         </div>
                     </CollapsibleItem>
-                {:else}
+                 {:else} 
                     <CollapsibleItem>
                         <svelte:fragment slot="title">
                             <span class="u-margin-inline-end-16">Git settings</span>
@@ -319,8 +331,8 @@
                                 </div>
                             </article>
                         {/if}
-                    </CollapsibleItem>
-                {/if}
+                    </CollapsibleItem>-->
+                <!-- {/if} -
                 <CollapsibleItem>
                     <svelte:fragment slot="title">Build settings</svelte:fragment>
                     <FormList>
@@ -332,7 +344,7 @@
                             bind:value={commands} />
                     </FormList>
                 </CollapsibleItem>
-            </Collapsible>
+            </Collapsible> -->
         </svelte:fragment>
 
         <svelte:fragment slot="actions">

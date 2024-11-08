@@ -70,12 +70,12 @@
         <EmptySearch>
             <div class="u-flex u-flex-vertical u-cross-center u-gap-24">
                 <p class="text u-line-height-1-5">No memberships available</p>
-                <Button
+                <!-- <Button
                     external
                     secondary
                     href="https://appwrite.io/docs/products/auth/teams#create-membership">
                     Documentation
-                </Button>
+                </Button> -->
             </div>
         </EmptySearch>
     {/if}

@@ -73,13 +73,14 @@
     <CardGrid>
         <Heading tag="h6" size="7" id="permissions">Execute access</Heading>
         <p>
-            Choose who can execute this function using the client API. Learn more about <a
+            Choose who can execute this function using the client API. Learn more about 
+            <!-- <a
                 href="https://appwrite.io/docs/advanced/platform/permissions"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="link">
                 Permissions
-            </a>.
+            </a>. -->
         </p>
         <svelte:fragment slot="aside">
             <Roles bind:roles={permissions} />

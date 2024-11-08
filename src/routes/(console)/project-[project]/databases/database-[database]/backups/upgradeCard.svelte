@@ -25,7 +25,7 @@
 </script>
 
 <div>
-    <Card style="--card-padding: 1rem; --card-padding-mobile: 1rem">
+    <!-- <Card style="--card-padding: 1rem; --card-padding-mobile: 1rem">
         <div class="u-flex u-gap-24 u-flex-vertical-mobile u-cross-center">
             <div
                 style:--p-file-preview-border-color="transparent"
@@ -106,10 +106,10 @@
                 </Button>
             </div>
         </div>
-    </Card>
+    </Card> -->
 </div>
 
-<style>
+<!-- <style>
     .is-tablet {
         display: none;
     }
@@ -143,4 +143,4 @@
             display: none !important;
         }
     }
-</style>
+</style> -->

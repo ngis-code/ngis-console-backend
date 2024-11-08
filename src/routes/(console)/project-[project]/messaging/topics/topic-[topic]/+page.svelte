@@ -153,11 +153,11 @@
             </Button>
         </EmptySearch>
     {:else}
-        <Empty
+        <!-- <Empty
             single
             on:click={() => (showAdd = true)}
             href="https://appwrite.io/docs/products/messaging/topics#subscribe-targets-to-topics"
-            target="subscriber" />
+            target="subscriber" /> -->
     {/if}
 </Container>
 
@@ -168,12 +168,13 @@
     on:update={addTargets}>
     <svelte:fragment slot="description">
         <p class="text">
-            Add subscribers to this topic by selecting the targets for directing messages. <a
+            Add subscribers to this topic by selecting the targets for directing messages. 
+            <!-- <a
                 href="https://appwrite.io/docs/products/messaging/topics#subscribe-targets-to-topics"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="link">Learn more about subscribers</a
-            >.
+            >. -->
         </p>
     </svelte:fragment>
 </UserTargetsModal>

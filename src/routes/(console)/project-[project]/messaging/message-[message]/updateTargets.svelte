@@ -176,13 +176,13 @@
                     <div class="u-text-center">
                         No targets have been selected.
                         <p>
-                            Need a hand? Check out our <Button
+                            <!-- Need a hand? Check out our <Button
                                 link
                                 external
                                 href="https://appwrite.io/docs/products/messaging/targets"
                                 text>
                                 documentation</Button
-                            >.
+                            >. -->
                         </p>
                     </div>
                 </EmptySearch>

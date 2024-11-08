@@ -150,12 +150,12 @@
                 </p>
             </div>
             <div class="u-flex u-gap-16 u-main-center">
-                <Button
+                <!-- <Button
                     external
                     href="https://appwrite.io/docs/products/functions/deployment"
                     text
                     event="empty_documentation"
-                    ariaLabel={`create deployment`}>Documentation</Button>
+                    ariaLabel={`create deployment`}>Documentation</Button> -->
                 <Create secondary />
             </div>
         </Empty>

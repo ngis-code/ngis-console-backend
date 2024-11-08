@@ -64,11 +64,27 @@
         <div class="git-container u-position-relative">
             <div class="grid-1-1 u-gap-24">
                 <div class="card u-cross-child-start u-height-100-percent">
-                    <Heading size="6" tag="h6">Connect Git repository</Heading>
+                    <Heading size="6" tag="h6">Function Wizard</Heading>
                     <p class="u-margin-block-start-8">
-                        Create and deploy a function with a connected git repository.
+                        Use our wizard to make a manual function deployment.
                     </p>
-                    <div class="u-margin-block-start-24">
+                     <p class="u-margin-block-start-16">
+               <button
+                    class="link"
+                    on:click={() => {
+                        trackEvent('click_create_function_manual', {
+                            from: 'cover'
+                        });
+                    }}
+                    on:click={() => wizard.start(CreateManual)}>Click Here</button>
+            
+            
+                
+            </p>
+            
+
+       
+                    <!-- <div class="u-margin-block-start-24">
                         <Repositories
                             bind:hasInstallations
                             bind:selectedRepository
@@ -78,8 +94,8 @@
                                 to: 'cover'
                             }}
                             on:connect={connect} />
-                    </div>
-                    {#if isSelfHosted && !isVcsEnabled}
+                    </div> -->
+                    <!-- {#if isSelfHosted && !isVcsEnabled}
                         <div
                             class="overlay u-flex-vertical u-position-absolute u-height-100-percent u-width-full-line u-z-index-1 u-text-center u-inset-0"
                             style="border-radius: var(--border-radius-medium)">
@@ -91,19 +107,19 @@
                                 <p>
                                     Configure your self-hosted instance to connect your function to
                                     a Git repository.
-                                    <a
+                                     <a
                                         href="https://appwrite.io/docs/advanced/self-hosting/functions#git"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        class="link">Learn more</a
-                                    >.
+                                        class="link">Learn more</a 
+                                    
                                 </p>
                             </div>
                         </div>
-                    {/if}
+                    {/if} -->
                 </div>
 
-                <div class="card u-height-100-percent">
+                <!-- <div class="card u-height-100-percent">
                     <section class="common-section">
                         <Heading size="6" tag="h6">Quick start</Heading>
                         <p class="u-margin-block-start-8">Use a starter template.</p>
@@ -264,8 +280,8 @@
                         <span class="icon-cheveron-right" aria-hidden="true" />
                     </Button>
                 </div>
-            </div>
-            <p class="u-margin-block-start-16">
+            </div> -->
+            <!-- <p class="u-margin-block-start-16">
                 You can also create a function <button
                     class="link"
                     on:click={() => {
@@ -281,12 +297,12 @@
                     rel="noopener noreferrer"
                     class="link">Learn more</a
                 >.
-            </p>
+            </p> -->
         </div>
     </div>
 </WizardCover>
 
-<style lang="scss">
+<!-- <style lang="scss">
     .git-container .overlay {
         background: linear-gradient(
             0,
@@ -299,4 +315,4 @@
         line-height: 140%;
         font-weight: 500;
     }
-</style>
+</style> -->

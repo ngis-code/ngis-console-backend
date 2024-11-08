@@ -37,12 +37,12 @@
 <WizardStep beforeSubmit={createDomain}>
     <svelte:fragment slot="title">Domain</svelte:fragment>
     <svelte:fragment slot="subtitle">
-        Use your self-owned domain as the endpoint of your Appwrite API. <a
+        <!-- Use your self-owned domain as the endpoint of your Appwrite API. <a
             href="https://appwrite.io/docs/advanced/platform/custom-domains"
             target="_blank"
             rel="noopener noreferrer"
             class="link">Learn more</a
-        >.
+        >. -->
     </svelte:fragment>
 
     <FormList>
@@ -75,12 +75,12 @@
             To add a domain to a locally hosted Appwrite project, you must first configure your server
             domain.
             <svelte:fragment slot="buttons">
-                <Button
+                <!-- <Button
                     href="https://appwrite.io/docs/advanced/self-hosting/functions#git"
                     external
                     text>
                     Learn more
-                </Button>
+                </Button> -->
             </svelte:fragment>
         </Alert>
     {/if}

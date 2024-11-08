@@ -127,13 +127,13 @@
             <div class="u-text-center">
                 <p>No targets are assigned to this user. Messages can not be sent to them.</p>
                 <p>
-                    Need a hand? Check out our <Button
+                    <!-- Need a hand? Check out our <Button
                         link
                         external
                         href="https://appwrite.io/docs/products/messaging/targets"
                         text>
                         documentation</Button
-                    >.
+                    >. -->
                 </p>
             </div>
         </EmptySearch>

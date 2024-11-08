@@ -99,12 +99,12 @@
                 <b>Sorry, we couldn't find ‘{data.search}'</b>
                 <p>There are no members that match your search.</p>
             </div>
-            <Button
+            <!-- <Button
                 external
                 href="https://appwrite.io/docs/products/auth/teams#create-membership"
                 text>
                 Documentation
-            </Button>
+            </Button> -->
             <Button secondary on:click={() => (showCreate = true)}>Create membership</Button>
         </EmptySearch>
     {:else}

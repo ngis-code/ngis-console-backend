@@ -61,7 +61,7 @@
                         Create a {target} to get started.
                     </Heading>
                     <p class="body-text-2 u-bold u-margin-block-start-4">
-                        Need a hand? Learn more in our documentation.
+                        .
                     </p>
                 </div>
                 <div class="u-flex u-flex-wrap u-gap-16 u-main-center">

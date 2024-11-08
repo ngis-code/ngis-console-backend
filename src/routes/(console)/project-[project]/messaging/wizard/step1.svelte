@@ -42,12 +42,13 @@
         !!validateData($messageParams[MessagingProviderType.Push].data)}>
     <svelte:fragment slot="title">Message</svelte:fragment>
     <svelte:fragment slot="subtitle">
-        {createMessage(providers[$providerType].text)} Learn more in our <Button
+        {createMessage(providers[$providerType].text)} 
+        <!-- <Button
             link
             external
             text
-            href={docsUrl}>documentation</Button
-        >.
+            href={docsUrl}>documentation</Button -->
+        
     </svelte:fragment>
     {#if $providerType === MessagingProviderType.Email}
         <EmailFormList />

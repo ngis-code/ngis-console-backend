@@ -171,7 +171,7 @@ export const providers: ProvidersMap = {
                         name: 'sandbox',
                         type: 'switch',
                         description:
-                            'Enable sandbox mode for testing on apps signed with development provisioning profiles. <a class="link" href="https://appwrite.io/docs/products/messaging/apns#configure-provider" target="_blank" rel="noopener noreferrer">Learn more</a>.'
+                            'Enable sandbox mode for testing on apps signed with development provisioning profiles'
                     }
                 ]
             }

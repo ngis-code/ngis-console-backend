@@ -152,12 +152,13 @@
                         You have no users. Create a user to see them here.
                     </p>
                     <p class="text u-line-height-1-5">
-                        Need a hand? Learn more in our <a
+                        Need a hand? Learn more in our 
+                        <!-- <a
                             href="https://appwrite.io/docs/products/auth/quick-start"
                             target="_blank"
                             rel="noopener noreferrer">
                             documentation</a
-                        >.
+                        >. -->
                     </p>
                 </div>
             </div>

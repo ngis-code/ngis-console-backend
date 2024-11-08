@@ -64,7 +64,7 @@
 
     <SettingsFormList bind:files {inputs} bind:params={$providerParams[$provider]} />
 
-    <div class="need-a-hand u-flex-vertical u-gap-8">
+    <!-- <div class="need-a-hand u-flex-vertical u-gap-8">
         <p class="body-text-2 u-bold u-margin-block-start-48">Need a hand?</p>
 
         <div>
@@ -136,12 +136,12 @@
                 </ClickableListItem>
             </ClickableList>
         </div>
-    </div>
+    </div> -->
 </WizardStep>
 
 <CreateMember bind:showCreate={$newMemberModal} />
 
-<style lang="scss">
+<!-- <style lang="scss">
     .need-a-hand {
         --p-bg-color-hover: var(--color-neutral-5);
         .how-to-enable {
@@ -179,4 +179,4 @@
     :global(.clickable-list-button):focus p {
         font-weight: 600;
     }
-</style>
+</style> -->

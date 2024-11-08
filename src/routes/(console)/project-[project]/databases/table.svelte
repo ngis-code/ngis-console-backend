@@ -26,6 +26,7 @@
     import type { PageData } from './$types';
     import { columns } from './store';
     import Cell from '$lib/elements/table/cell.svelte';
+    import Policy from './database-[database]/backups/policy.svelte';
 
     export let data: PageData;
     const projectId = $page.params.project;
@@ -119,7 +120,7 @@
                                         content: `Last backup: ${lastBackup}`
                                     }}>
                                     {#if !policies}
-                                        <span class="icon-exclamation" /> No backup policies
+                                        <span class="icon-exclamation" /> Disabled
                                     {:else}
                                         {description}
                                     {/if}

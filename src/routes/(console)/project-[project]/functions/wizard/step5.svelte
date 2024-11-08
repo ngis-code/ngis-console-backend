@@ -45,13 +45,14 @@
 <WizardStep>
     <svelte:fragment slot="title">Variables</svelte:fragment>
     <svelte:fragment slot="subtitle">
-        Create the environment variables or secret keys that will be passed to your function. <a
+        Create the environment variables or secret keys that will be passed to your function. 
+        <!-- <a
             href="https://appwrite.io/docs/advanced/platform/permissions"
             target="_blank"
             rel="noopener noreferrer"
             class="link">
             permissions documentation
-        </a>.
+        </a>. -->
     </svelte:fragment>
     {#if $createFunction.vars.length}
         <Table noStyles>

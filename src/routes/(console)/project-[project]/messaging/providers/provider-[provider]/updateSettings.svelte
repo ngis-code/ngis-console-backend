@@ -221,15 +221,16 @@
         <div class="grid-1-2-col-1 u-flex u-cross-center u-gap-16" data-private>
             <Heading tag="h6" size="7">Settings</Heading>
         </div>
-        <p>
-            Configure the settings to <Button
+        <!-- <p>
+            Configure the settings to 
+            <Button
                 link
                 href={`https://appwrite.io/docs/products/messaging/${provider}`}
                 external>enable {displayName}</Button> to send {message}, or <Button
                 link
                 on:click={() => (newMemberModal = true)}>invite a team member</Button> to complete the
             provider settings.
-        </p>
+        </p> -->
         <svelte:fragment slot="aside">
             <!-- Must wait until ready or else the files input won't be set properly -->
             {#if ready}

@@ -250,12 +250,12 @@
                                     You have no users. Create a user to see them here.
                                 </p>
                                 <p class="text u-line-height-1-5">
-                                    Need a hand? Learn more in our <Button
+                                    <!-- Need a hand? Learn more in our <Button
                                         link
                                         external
                                         href="https://appwrite.io/docs/products/auth/quick-start"
                                         >documentation</Button
-                                    >.
+                                    >. -->
                                 </p>
                             </div>
                         </div>

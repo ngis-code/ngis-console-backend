@@ -45,12 +45,12 @@
             </FormList>
             <p class="text">
                 Enabling this option prevent users from setting insecure passwords by comparing the
-                user's password with the <a
+                <!-- user's password with the <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link"
                     href="https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt"
-                    >10k most commonly used passwords.</a>
+                    >10k most commonly used passwords.</a> -->
             </p>
         </svelte:fragment>
 

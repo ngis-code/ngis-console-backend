@@ -124,11 +124,12 @@
                 {#if $$slots.default}
                     <li style="margin-block: 1rem;">
                         <p class="text">
-                            Click to copy variables for the fields below. Learn more <a
+                            Click to copy variables for the fields below. Learn more 
+                            <!-- <a
                                 class="link"
                                 href="https://appwrite.io/docs/advanced/platform/message-templates"
-                                >here</a
-                            >.
+                                >here</a -->
+                            
                         </p>
                         <div class="u-margin-block-start-16 u-flex u-flex-wrap u-gap-8">
                             <slot />

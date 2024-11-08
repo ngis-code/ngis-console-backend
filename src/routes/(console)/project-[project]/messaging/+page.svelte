@@ -254,9 +254,9 @@
                 <p>There are no messages that match your search.</p>
             </div>
             <div class="u-flex u-gap-16">
-                <Button external href="https://appwrite.io/docs/products/messaging/messages" text>
+                <!-- <Button external href="https://appwrite.io/docs/products/messaging/messages" text>
                     Documentation
-                </Button>
+                </Button> -->
                 <Button secondary href={`${base}/project-${$page.params.project}/messaging`}>
                     Clear search
                 </Button>
@@ -269,18 +269,18 @@
                     Create your first message to get started.
                 </Heading>
                 <p class="body-text-2 u-bold u-margin-block-start-4">
-                    Need a hand? Learn more in our documentation.
+                    .
                 </p>
             </div>
             <div class="u-flex u-flex-wrap u-gap-16 u-main-center">
-                <Button
+                <!-- <Button
                     external
                     href="https://appwrite.io/docs/products/messaging/messages"
                     text
                     event="empty_documentation"
                     ariaLabel={`create message`}>
                     Documentation
-                </Button>
+                </Button> -->
                 {#if $canWriteMessages}
                     <CreateMessageDropdown bind:showCreateDropdown={showCreateDropdownEmpty}>
                         <Button

@@ -278,13 +278,14 @@
             <CardGrid hideOverflow>
                 <Heading tag="h6" size="7" id="permissions">Permissions</Heading>
                 <p class="text">
-                    Choose who can access your buckets and files. For more information, visit our <a
+                    Choose who can access your buckets and files. For more information, visit our 
+                    <!-- <a
                         href="https://appwrite.io/docs/advanced/platform/permissions"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="link">
                         Permissions guide
-                    </a>.
+                    </a>. -->
                 </p>
                 <svelte:fragment slot="aside">
                     {#if bucketPermissions}

@@ -80,7 +80,7 @@
     }
 </script>
 
-<Form onSubmit={updateMockNumbers}>
+<!-- <Form onSubmit={updateMockNumbers}>
     <CardGrid hideFooter={isComponentDisabled}>
         <Heading tag="h6" size="7" id="variables">Mock phone numbers</Heading>
         <p>
@@ -236,4 +236,4 @@
             <Button disabled={isSubmitDisabled} submit>Update</Button>
         </svelte:fragment>
     </CardGrid>
-</Form>
+</Form> -->

@@ -127,11 +127,11 @@
     <CardGrid>
         <Heading size="7" tag="h3">Email templates</Heading>
         <p class="text">
-            Use templates to send and process account management emails. <a
+            <!-- Use templates to send and process account management emails. <a
                 href="https://appwrite.io/docs/advanced/platform/message-templates"
                 class="link">
                 Learn more about email templates.
-            </a>
+            </a> -->
         </p>
 
         <svelte:fragment slot="aside">
