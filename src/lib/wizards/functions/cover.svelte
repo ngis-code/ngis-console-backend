@@ -82,7 +82,10 @@
                 
             </p>
             
-
+                </div>
+            </div>
+            </div></div>
+</WizardCover>
        
                     <!-- <div class="u-margin-block-start-24">
                         <Repositories
