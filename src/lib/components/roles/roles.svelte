@@ -2,7 +2,7 @@
     import Base from './base.svelte';
 </script>
 
-<Base>
+<!-- <Base>
     <div class="u-flex-vertical u-gap-8">
         <p class="u-bold">Roles</p>
         <p>Owner, Developer, Editor, Analyst and Billing.</p>
@@ -14,4 +14,4 @@
                 href="https://appwrite.io/docs/advanced/platform/roles">Learn more</a> about roles.
         </p>
     </div>
-</Base>
+</Base> -->
