@@ -35,11 +35,11 @@
                 aria-hidden="true"
                 style="font-size: 32px;" />
             <p class="u-bold">No data to show</p>
-            <a
+            <!-- <a
                 class="link"
                 href="https://appwrite.io/docs/apis/realtime"
                 target="_blank"
-                rel="noopener noreferrer">Get started with Realtime</a>
+                rel="noopener noreferrer">Get started with Realtime</a> -->
         </div>
     </Card>
 {/if}
