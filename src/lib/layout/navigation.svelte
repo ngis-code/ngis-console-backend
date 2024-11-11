@@ -213,16 +213,16 @@
                                 </a>
                             </li>
                         {/if}
-                        <li class="drop-list-item">
+                        <!-- <li class="drop-list-item">
                             <button class="drop-button" on:click={openSupport}>
                                 <span class="text">Support</span>
                             </button>
-                        </li>
-                        <li class="drop-list-item">
+                        </li> -->
+                        <!-- <li class="drop-list-item">
                             <button class="drop-button" on:click={openFeedback}>
                                 <span class="text">Feedback</span>
                             </button>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
             </div>
