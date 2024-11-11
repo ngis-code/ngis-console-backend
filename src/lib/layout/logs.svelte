@@ -281,7 +281,7 @@
                                     </div>
                                 {/if}
 
-                                <p class="text u-text-center u-padding-24">
+                                <!-- <p class="text u-text-center u-padding-24">
                                     {execution.requestHeaders?.length
                                         ? 'Not all header data is'
                                         : 'Header data is not'}
@@ -294,9 +294,9 @@
                                         rel="noopener noreferrer"
                                         class="link">Learn more</a
                                     >.
-                                </p>
+                                </p> -->
                             {:else if selectedRequest === 'body'}
-                                <p class="text u-text-center u-padding-24">
+                                <!-- <p class="text u-text-center u-padding-24">
                                     Body data is not captured by Appwrite for your user's security
                                     and privacy. To display body data in the Logs tab, use
                                     <b>context.log()</b>.
@@ -306,7 +306,7 @@
                                         rel="noopener noreferrer"
                                         class="link">Learn more</a
                                     >.
-                                </p>
+                                </p> -->
                             {/if}
                         </div>
                         <div class="grid-1-2-col-2 u-flex u-flex-vertical u-gap-16 u-min-width-0">
@@ -389,7 +389,7 @@
                                         </TableBody>
                                     </TableScroll>
                                 {/if}
-                                <p class="text u-text-center u-padding-24">
+                                <!-- <p class="text u-text-center u-padding-24">
                                     {execution.responseHeaders?.length
                                         ? 'Not all header data is'
                                         : 'Header data is not'}
@@ -402,9 +402,9 @@
                                         rel="noopener noreferrer"
                                         class="link">Learn more</a
                                     >.
-                                </p>
+                                </p> -->
                             {:else if selectedResponse === 'body'}
-                                <p class="text u-text-center u-padding-24">
+                                <!-- <p class="text u-text-center u-padding-24">
                                     Body data is not captured by Appwrite for your user's security
                                     and privacy. To display body data in the Logs tab, use
                                     <b>context.log()</b>.
@@ -414,7 +414,7 @@
                                         rel="noopener noreferrer"
                                         class="link">Learn more</a
                                     >.
-                                </p>
+                                </p> -->
                             {/if}
                         </div>
                     </div>
