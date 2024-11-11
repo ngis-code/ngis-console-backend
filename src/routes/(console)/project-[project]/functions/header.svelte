@@ -14,11 +14,11 @@
             event: 'functions',
             hasChildren: true
         },
-        {
-            href: `${path}/templates`,
-            title: 'Templates',
-            event: 'templates'
-        }
+        // {
+        //     href: `${path}/templates`,
+        //     title: 'Templates',
+        //     event: 'templates'
+        // }
     ];
 </script>
 
