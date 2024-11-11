@@ -243,7 +243,7 @@
                                     </div>
                                 {/if}
 
-                                <p class="text u-text-center u-padding-24">
+                                <!-- <p class="text u-text-center u-padding-24">
                                     {parameters?.length
                                         ? 'Not all parameters data is'
                                         : 'Parameters data is not'} captured by Appwrite for your user's
@@ -256,7 +256,7 @@
                                         rel="noopener noreferrer"
                                         class="link">Learn more</a
                                     >.
-                                </p>
+                                </p> -->
                             {:else if selectedRequest === 'headers'}
                                 {#if execution.requestHeaders.length}
                                     <div class="u-margin-block-start-24">
