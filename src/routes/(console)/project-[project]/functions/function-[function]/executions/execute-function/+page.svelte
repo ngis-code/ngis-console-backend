@@ -146,7 +146,7 @@
 </script>
 
 <svelte:head>
-    <title>Execute function - Appwrite</title>
+    <title>Execute function </title>
 </svelte:head>
 
 <WizardSecondaryContainer href={previousPage}>

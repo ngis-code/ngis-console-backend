@@ -128,7 +128,7 @@
 </script>
 
 <svelte:head>
-    <title>Database - Appwrite</title>
+    <title>Database </title>
 </svelte:head>
 
 <slot />

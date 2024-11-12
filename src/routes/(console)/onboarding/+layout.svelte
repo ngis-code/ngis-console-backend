@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Onboarding - Appwrite</title>
+    <title>Onboarding </title>
 </svelte:head>
 
 <slot />

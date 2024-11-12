@@ -80,7 +80,7 @@
 </script>
 
 <svelte:head>
-    <title>Sign up - Appwrite</title>
+    <title>Sign up </title>
 </svelte:head>
 
 <Unauthenticated coupon={data?.couponData} campaign={data?.campaign}>

@@ -44,7 +44,7 @@
 </script>
 
 <svelte:head>
-    <title>Topic - Appwrite</title>
+    <title>Topic </title>
 </svelte:head>
 
 <slot />

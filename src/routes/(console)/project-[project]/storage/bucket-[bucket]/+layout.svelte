@@ -99,7 +99,7 @@
 </script>
 
 <svelte:head>
-    <title>Bucket - Appwrite</title>
+    <title>Bucket </title>
 </svelte:head>
 
 <slot />

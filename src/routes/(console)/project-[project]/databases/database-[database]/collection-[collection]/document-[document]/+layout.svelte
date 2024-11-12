@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Document - Appwrite</title>
+    <title>Document </title>
 </svelte:head>
 
 <slot />

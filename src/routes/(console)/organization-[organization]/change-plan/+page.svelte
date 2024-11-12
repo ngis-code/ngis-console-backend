@@ -244,7 +244,7 @@
 </script>
 
 <svelte:head>
-    <title>Change plan - Appwrite</title>
+    <title>Change plan </title>
 </svelte:head>
 
 <WizardSecondaryContainer bind:showExitModal href={previousPage} confirmExit>

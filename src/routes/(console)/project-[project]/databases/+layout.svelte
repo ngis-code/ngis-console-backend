@@ -31,7 +31,7 @@
 </script>
 
 <svelte:head>
-    <title>Databases - Appwrite</title>
+    <title>Databases </title>
 </svelte:head>
 
 <slot />

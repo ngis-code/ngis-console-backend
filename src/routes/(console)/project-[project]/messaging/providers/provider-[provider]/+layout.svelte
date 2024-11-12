@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Provider - Appwrite</title>
+    <title>Provider </title>
 </svelte:head>
 
 <slot />

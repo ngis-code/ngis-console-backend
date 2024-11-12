@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-    <title>Organizations - Appwrite</title>
+    <title>Organizations </title>
 </svelte:head>
 
 <slot />

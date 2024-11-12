@@ -78,7 +78,7 @@
 </script>
 
 <svelte:head>
-    <title>Console - Appwrite</title>
+    <title>Console</title>
 </svelte:head>
 
 {#if $project}

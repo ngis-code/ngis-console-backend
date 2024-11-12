@@ -79,7 +79,7 @@
 </script>
 
 <svelte:head>
-    <title>API key - Appwrite</title>
+    <title>API key </title>
 </svelte:head>
 
 <Container>

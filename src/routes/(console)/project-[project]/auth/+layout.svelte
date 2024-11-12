@@ -104,7 +104,7 @@
 </script>
 
 <svelte:head>
-    <title>Auth - Appwrite</title>
+    <title>Auth </title>
 </svelte:head>
 
 <slot />

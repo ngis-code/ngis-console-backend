@@ -48,7 +48,7 @@
 </script>
 
 <svelte:head>
-    <title>Verify - Appwrite</title>
+    <title>Verify </title>
 </svelte:head>
 
 <Unauthenticated>

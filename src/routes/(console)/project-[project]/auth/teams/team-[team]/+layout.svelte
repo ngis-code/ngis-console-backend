@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Team - Appwrite</title>
+    <title>Team </title>
 </svelte:head>
 
 <slot />

@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-    <title>Settings - Appwrite</title>
+    <title>Settings </title>
 </svelte:head>
 
 <slot />

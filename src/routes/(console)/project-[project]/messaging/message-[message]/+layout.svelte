@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Message - Appwrite</title>
+    <title>Message </title>
 </svelte:head>
 
 <slot />

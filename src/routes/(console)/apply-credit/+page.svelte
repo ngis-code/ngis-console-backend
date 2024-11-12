@@ -195,7 +195,7 @@
 </script>
 
 <svelte:head>
-    <title>Apply credits - Appwrite</title>
+    <title>Apply credits </title>
 </svelte:head>
 
 <WizardSecondaryContainer href={previousPage} bind:showExitModal confirmExit>

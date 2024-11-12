@@ -52,7 +52,7 @@
 </script>
 
 <svelte:head>
-    <title>Webhooks - Appwrite</title>
+    <title>Webhooks </title>
 </svelte:head>
 
 <Container>

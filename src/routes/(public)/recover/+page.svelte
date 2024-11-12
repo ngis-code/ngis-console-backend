@@ -66,7 +66,7 @@
 </script>
 
 <svelte:head>
-    <title>Recover - Appwrite</title>
+    <title>Recover </title>
 </svelte:head>
 
 <Unauthenticated>

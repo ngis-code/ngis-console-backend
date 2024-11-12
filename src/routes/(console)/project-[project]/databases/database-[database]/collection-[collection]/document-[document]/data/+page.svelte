@@ -111,7 +111,7 @@
 </script>
 
 <svelte:head>
-    <title>Data - Appwrite</title>
+    <title>Data </title>
 </svelte:head>
 
 <Container>

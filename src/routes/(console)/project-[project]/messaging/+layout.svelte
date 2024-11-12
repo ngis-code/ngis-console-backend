@@ -57,7 +57,7 @@
 </script>
 
 <svelte:head>
-    <title>Messaging - Appwrite</title>
+    <title>Messaging </title>
 </svelte:head>
 
 <slot />

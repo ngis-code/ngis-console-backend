@@ -202,7 +202,7 @@
 </script>
 
 <svelte:head>
-    <title>{$collection?.name ?? 'Collection'} - Appwrite</title>
+    <title>{$collection?.name ?? 'Collection'} </title>
 </svelte:head>
 
 <slot />

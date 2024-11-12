@@ -169,7 +169,7 @@
 </script>
 
 <svelte:head>
-    <title>Create organization - Appwrite</title>
+    <title>Create organization </title>
 </svelte:head>
 
 <WizardSecondaryContainer bind:showExitModal href={previousPage} confirmExit>
