@@ -170,7 +170,7 @@ campaigns
     })
     .set('FusionVC', {
         template: 'review',
-        title: 'Welcome to Appwrite!',
+        title: 'Console',
         description:
             'Upgrade to Appwrite Pro and add the credits to enjoy the full capabilities of Cloud. Provided to you by Fusion VC.',
         footer: true,

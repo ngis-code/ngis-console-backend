@@ -5,6 +5,6 @@
 
 <Cover size="large">
     <div class="u-flex u-cross-center u-main-center u-width-full-line">
-        <Heading size="1" tag="h1" trimmed={false}>Welcome to Appwrite</Heading>
+        <Heading size="1" tag="h1" trimmed={false}>Console</Heading>
     </div>
 </Cover>
