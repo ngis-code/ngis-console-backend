@@ -120,7 +120,7 @@
                     bind:value={$emailTemplate.replyTo}
                     id="replyTo"
                     label="Reply to"
-                    placeholder="noreply@appwrite.io" />
+                    placeholder="noreply@domain.com" />
                 {#if $$slots.default}
                     <li style="margin-block: 1rem;">
                         <p class="text">
