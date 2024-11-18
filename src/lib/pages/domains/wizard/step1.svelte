@@ -49,7 +49,7 @@
         <InputDomain
             id="domain"
             label="Domain"
-            placeholder="appwrite.example.com"
+            placeholder="example.com"
             autocomplete={false}
             required
             bind:value={$domain.domain} />
